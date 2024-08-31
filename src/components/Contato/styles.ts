@@ -32,14 +32,40 @@ export const Tag = styled.span<TagProps>`
   border-radius: 8px;
   background-color: ${(props) => retornaCorDeFundo(props)};
 `
-export const Form = styled.form`
-  margin-top: 16px;
+export const Form = styled.h3`
   color: #2e0249;
-  font-size: 12px;
+  font-size: 16px;
+  padding-top: 16px;
 `
+export const TelefoneContato = styled.textarea`
+  color: #2e0249;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  resize: none;
+  border: none;
+  background-color: transparent;
+`
+
+export const EmailContato = styled.textarea`
+  color: #2e0249;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  resize: none;
+  border: none;
+  background-color: transparent;
+`
+
 export const BarraAcoes = styled.div`
   border-top: 1px solid #d9d9d9;
-  padding-top: 16px;
+  padding-top: 8px;
 `
 export const Botao = styled.button`
   padding: 8px 12px;
