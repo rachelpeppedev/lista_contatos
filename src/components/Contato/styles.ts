@@ -19,7 +19,7 @@ function retornaCorDeFundo(props: TagProps): string {
 export const Card = styled.div`
   padding: 16px;
   margin-top: 16px;
-  background-color: #d9d9d9;
+  background-color: ${variaveis.cinzaclaro};
   border-radius: 16px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 `
@@ -33,12 +33,12 @@ export const Tag = styled.span<TagProps>`
   background-color: ${(props) => retornaCorDeFundo(props)};
 `
 export const Form = styled.h3`
-  color: #2e0249;
+  color: ${variaveis.roxoescuro};
   font-size: 16px;
   padding-top: 16px;
 `
 export const TelefoneContato = styled.textarea`
-  color: #2e0249;
+  color: ${variaveis.roxoescuro};
   font-size: 14px;
   line-height: 16px;
   display: block;
@@ -51,7 +51,7 @@ export const TelefoneContato = styled.textarea`
 `
 
 export const EmailContato = styled.textarea`
-  color: #2e0249;
+  color: ${variaveis.roxoescuro};
   font-size: 14px;
   line-height: 16px;
   display: block;
@@ -64,23 +64,19 @@ export const EmailContato = styled.textarea`
 `
 
 export const BarraAcoes = styled.div`
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid ${variaveis.cinzaclaro};
   padding-top: 8px;
 `
 export const Botao = styled.button`
   padding: 8px 12px;
   border-radius: 8px;
   border: none;
-  background-color: #2e0249;
+  background-color: ${variaveis.roxoescuro};
   color: #fff;
   font-weight: bold;
   font-size: 12px;
   cursor: pointer;
   margin-right: 8px;
-`
-
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
 `
 export const BotaoCancelarRemover = styled(Botao)`
   background-color: ${variaveis.vermelho};

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Aside = styled.aside`
   padding: 16px;
-  background-color: #2e0249;
+  background-color: ${variaveis.roxoescuro};
   height: 100vh;
 `
 
@@ -18,7 +19,7 @@ export const Campo = styled.input`
   background-color: #fff;
   border-radius: 8px;
   font-weight: bold;
-  color: #2e0249;
-  border: 3px solid #a91079;
+  color: ${variaveis.roxoescuro};
+  border: 3px solid ${variaveis.rosa};
   width: 100%;
 `

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Container = styled.main`
-  background-color: #a91079;
+  background-color: ${variaveis.rosa};
   height: 100vh;
   overflow-y: scroll;
 `
