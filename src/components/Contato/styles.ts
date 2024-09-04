@@ -32,10 +32,20 @@ export const Tag = styled.span<TagProps>`
   border-radius: 8px;
   background-color: ${(props) => retornaCorDeFundo(props)};
 `
-export const Form = styled.h3`
+export const NomeContato = styled.textarea`
   color: ${variaveis.roxoescuro};
+  font-weight: bold;
   font-size: 16px;
   padding-top: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  resize: none;
+  border: none;
+  background-color: transparent;
 `
 export const TelefoneContato = styled.textarea`
   color: ${variaveis.roxoescuro};

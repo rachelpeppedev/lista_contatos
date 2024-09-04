@@ -50,14 +50,15 @@ const Contato = ({
   return (
     <S.Card>
       <S.Tag grupo={grupo}>{grupo}</S.Tag>
-      <S.Form
-        onClick={() => setEstaEditando(true)}
+      <S.NomeContato
         disabled={!estaEditando}
         value={nome}
-        onChange={(evento) => setNome(evento.target.value)}
+        onChange={(evento) => {
+          setNome(evento.target.value)
+        }}
       >
         {nome}
-      </S.Form>
+      </S.NomeContato>
       <S.EmailContato
         disabled={!estaEditando}
         value={email}
